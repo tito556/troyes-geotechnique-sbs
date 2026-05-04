@@ -1,0 +1,52 @@
+# Geotechnique — Troyes
+
+> Geotechnical engineering services in Troyes, France.
+
+## Services
+- [Amelioration Sols](https://troyes.geotechnique.sbs/amelioration-sols/)
+- [Ancrages](https://troyes.geotechnique.sbs/ancrages/)
+- [Cbr Routier](https://troyes.geotechnique.sbs/cbr-routier/)
+- [Chaussee Rigide](https://troyes.geotechnique.sbs/chaussee-rigide/)
+- [Chaussee Souple](https://troyes.geotechnique.sbs/chaussee-souple/)
+- [Colonnes Ballastees](https://troyes.geotechnique.sbs/colonnes-ballastees/)
+- [Confidentialite](https://troyes.geotechnique.sbs/confidentialite/)
+- [Densite Cone Sable](https://troyes.geotechnique.sbs/densite-cone-sable/)
+- [Essai Cpt](https://troyes.geotechnique.sbs/essai-cpt/)
+- [Essais Proctor](https://troyes.geotechnique.sbs/essais-proctor/)
+- [Excavations](https://troyes.geotechnique.sbs/excavations/)
+- [Excavations Profondes](https://troyes.geotechnique.sbs/excavations-profondes/)
+- [Fondations](https://troyes.geotechnique.sbs/fondations/)
+- [Geotechnique Routiere](https://troyes.geotechnique.sbs/geotechnique-routiere/)
+- [Granulometrie](https://troyes.geotechnique.sbs/granulometrie/)
+- [Injections](https://troyes.geotechnique.sbs/injections/)
+- [Investigation](https://troyes.geotechnique.sbs/investigation/)
+- [Isolation Sismique](https://troyes.geotechnique.sbs/isolation-sismique/)
+- [Labo In Situ](https://troyes.geotechnique.sbs/labo-in-situ/)
+- [Laboratoire](https://troyes.geotechnique.sbs/laboratoire/)
+- [Limites Atterberg](https://troyes.geotechnique.sbs/limites-atterberg/)
+- [Liquefaction](https://troyes.geotechnique.sbs/liquefaction/)
+- [Masw](https://troyes.geotechnique.sbs/masw/)
+- [Microzonage Sismique](https://troyes.geotechnique.sbs/microzonage-sismique/)
+- [Murs Soutenement](https://troyes.geotechnique.sbs/murs-soutenement/)
+- [Permeabilite In Situ](https://troyes.geotechnique.sbs/permeabilite-in-situ/)
+- [Pieux](https://troyes.geotechnique.sbs/pieux/)
+- [Puits Inspection](https://troyes.geotechnique.sbs/puits-inspection/)
+- [Radiers](https://troyes.geotechnique.sbs/radiers/)
+- [Refraction Sismique](https://troyes.geotechnique.sbs/refraction-sismique/)
+- [Resistivite](https://troyes.geotechnique.sbs/resistivite/)
+- [Semelles](https://troyes.geotechnique.sbs/semelles/)
+- [Sismique](https://troyes.geotechnique.sbs/sismique/)
+- [Sondages Spt](https://troyes.geotechnique.sbs/sondages-spt/)
+- [Stabilite Talus](https://troyes.geotechnique.sbs/stabilite-talus/)
+- [Surveillance Excavations](https://troyes.geotechnique.sbs/surveillance-excavations/)
+- [Talus](https://troyes.geotechnique.sbs/talus/)
+- [Triaxial](https://troyes.geotechnique.sbs/triaxial/)
+- [Tunnels Sol Mou](https://troyes.geotechnique.sbs/tunnels-sol-mou/)
+- [Vibrocompactage](https://troyes.geotechnique.sbs/vibrocompactage/)
+
+## Contact
+- Website: https://troyes.geotechnique.sbs/
+
+## About
+This site provides geotechnical engineering services in Troyes, France.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).

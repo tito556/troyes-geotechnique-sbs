@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées</title>
+<meta name="description" content="Évaluation rigoureuse de la stabilité des talus à Troyes sur les substrats crayeux et alluviaux. Diagnostic géomécanique, modélisation et solutions de confortement adaptées aux pentes de la vallé">
+<link rel="canonical" href="https://troyes.geotechnique.sbs/stabilite-talus/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées">
+<meta property="og:description" content="Évaluation rigoureuse de la stabilité des talus à Troyes sur les substrats crayeux et alluviaux. Diagnostic géomécanique, modélisation et solutions de confortement adaptées aux pentes de la vallé">
+<meta property="og:url" content="https://troyes.geotechnique.sbs/stabilite-talus/">
+<meta property="og:site_name" content="Geotechnique">
+<meta property="og:image" content="https://troyes.geotechnique.sbs/img/estabilidad-taludes-5.webp">
+<meta property="og:locale" content="fr_FR">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées">
+<meta name="twitter:description" content="Évaluation rigoureuse de la stabilité des talus à Troyes sur les substrats crayeux et alluviaux. Diagnostic géomécanique, modélisation et solutions de confortement adaptées aux pentes de la vallé">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "/"}, {"@type": "ListItem", "position": 2, "name": "Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées", "description": "Évaluation rigoureuse de la stabilité des talus à Troyes sur les substrats crayeux et alluviaux. Diagnostic géomécanique, modélisation et solutions de confortement adaptées aux pentes de la vallé", "areaServed": {"@type": "City", "name": "Troyes"}, "provider": {"@type": "LocalBusiness", "name": "Geotechnique", "email": "contact@geotechnique.sbs", "telephone": "", "address": {"@type": "PostalAddress", "addressLocality": "Troyes", "addressCountry": "FR"}}, "url": "https://troyes.geotechnique.sbs/stabilite-talus/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quel est le prix d’une étude de stabilité de pente sur un terrain en pente à Troyes ?", "acceptedAnswer": {"@type": "Answer", "text": "Pour un projet résidentiel sur un coteau de l’agglomération troyenne, le budget oscille généralement entre 1 180 € et 4 150 € HT. Ce montant couvre la campagne géotechnique, les essais de laboratoire, la modélisation et le rapport avec les préconisations de confortement. Les écarts dépendent de la longueur du talus, du nombre de sondages et de la complexité hydrogéologique."}}, {"@type": "Question", "name": "Pourquoi la craie de Troyes est-elle sensible aux glissements alors qu’elle semble dure ?", "acceptedAnswer": {"@type": "Answer", "text": "La craie du Sénonien est une roche tendre à porosité élevée. Quand elle est saine, elle tient bien. Mais en surface, elle est souvent altérée, fissurée et saturée en hiver. L’eau dissout le ciment carbonaté aux joints et réduit la cohésion. C’est ce matériau dégradé qui contrôle la stabilité des pentes, pas le banc sain en profondeur."}}, {"@type": "Question", "name": "Quelle est la différence entre une approche à l’équilibre limite et une modélisation en éléments finis ?", "acceptedAnswer": {"@type": "Answer", "text": "L’équilibre limite (méthode de Bishop) calcule un coefficient de sécurité le long d’une surface de rupture supposée. C’est rapide et normatif. Les éléments finis avec réduction de résistance (SSR) permettent de voir comment la déformation se développe avant la rupture, ce qui est utile quand le talus interagit avec une structure existante ou un écran de soutènement."}}, {"@type": "Question", "name": "Faut-il une étude de stabilité pour une simple extension de maison sur un terrain en pente à Troyes ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, dès que la pente dépasse 10 à 15° et que les terrassements modifient le profil. Une G2 AVP est exigée par l’Eurocode 7. Nous évaluons l’impact des déblais et des surcharges sur la stabilité globale. Souvent, un simple drainage et un talutage adéquat suffisent, mais il faut le démontrer par le calcul."}}]}</script>
+<style>
+:root {
+    --primary: #059669;
+    --accent: #10B981;
+    --dark: #0F172A;
+    --bg: #F8FAFC;
+    --text: #0F172A;
+    --font-h: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+a { color: var(--primary); text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+.sidebar .cat-sub a {
+    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+    font-size: .78rem; transition: all .15s; text-decoration: none;
+    border-left: 2px solid transparent;
+}
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+.sidebar .home {
+    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+    font-size: .85rem; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.header-contact a:hover { color: white; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+main section { margin-bottom: 1.5rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+main p { margin-bottom: 1rem; color: #334155; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+tr:nth-child(even) { background: #f8fafc; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.servicio:hover { border-color: var(--primary); }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+details[open] summary::before { content: '− '; }
+summary:hover { background: rgba(0,0,0,0.02); }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+footer a { color: rgba(255,255,255,0.85); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+    .container { padding: 1rem; }
+}
+</style>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div>
+                <div style="display:inline-flex;flex-direction:column;gap:2px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Troyes</span><div style="height:3px;width:60%;background:#059669;border-radius:2px;"></div></div>
+                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Troyes, France</div>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:contact@geotechnique.sbs">contact@geotechnique.sbs</a>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Accueil</a></li><li>›</li><li>Talus</li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Analyse de stabilité des pentes à Troyes – Approche géotechn…</li></ol></nav>
+        <h1>Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content-area">
+        <aside class="sidebar">
+            <nav><a href="index.html" class="home">Accueil</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Exploration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Exploration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/essai-cpt/">Essai CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="labo-in-situ"><div class="cat-row"><a href="/labo-in-situ/" class="cat-name">Essais in situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Essais in situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/densite-cone-sable/">Essai de densité sur site (méthode du cône de sable)</a></div></div><div class="cat-item" data-cat="laboratoire"><div class="cat-row"><a href="/laboratoire/" class="cat-name">Laboratoire</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratoire"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/granulometrie/">Analyse granulométrique (tamisage + hydromètre)</a></div></div><div class="cat-item" data-cat="fondations"><div class="cat-row"><a href="/fondations/" class="cat-name">Fondations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Fondations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/pieux/">Conception de fondations sur pieux</a></div></div><div class="cat-item" data-cat="talus"><div class="cat-row"><a href="/talus/" class="cat-name">Pentes et murs</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Pentes et murs"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stabilite-talus/">Analyse de stabilité des pentes</a><a href="/ancrages/">Conception d'ancrages actifs/passifs</a><a href="/murs-soutenement/">Conception de murs de soutènement</a></div></div><div class="cat-item" data-cat="amelioration-sols"><div class="cat-row"><a href="/amelioration-sols/" class="cat-name">Amélioration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Amélioration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/colonnes-ballastees/">Conception de colonnes ballastées (stone columns)</a><a href="/vibrocompactage/">Conception de vibrocompactage</a></div></div><div class="cat-item" data-cat="sismique"><div class="cat-row"><a href="/sismique/" class="cat-name">Sismique</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Sismique"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/liquefaction/">Analyse de liquéfaction des sols</a><a href="/isolation-sismique/">Conception d'isolation sismique à la base</a><a href="/microzonage-sismique/">Microzonage sismique</a></div></div><div class="cat-item" data-cat="geotechnique-routiere"><div class="cat-row"><a href="/geotechnique-routiere/" class="cat-name">Géotechnique routière</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Géotechnique routière"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/chaussee-rigide/">Conception de chaussées rigides</a><a href="/chaussee-souple/">Conception de chaussées souples</a><a href="/cbr-routier/">Étude CBR pour conception routière</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations souterraines</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations souterraines"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/tunnels-sol-mou/">Analyse géotechnique pour tunnels en sols mous</a><a href="/excavations-profondes/">Conception géotechnique des excavations profondes</a><a href="/surveillance-excavations/">Surveillance géotechnique des excavations</a></div></div></nav>
+        </aside>
+        <main>
+            <section><p>Sur les pentes qui bordent la vallée de la Seine autour de Troyes, notre équipe installe régulièrement des inclinomètres et des piézomètres pour suivre les mouvements de terrain. Ces instruments sont descendus dans des forages carottés qui traversent la craie altérée du Sénonien jusqu’aux bancs plus compacts. En parallèle, on prélève des échantillons intacts pour des essais de cisaillement qui mesurent la résistance résiduelle du matériau. Ce qui frappe ici, c’est la rapidité avec laquelle l’eau circule dans les diaclases de la craie après un orage d’automne. Une pente stable en août peut montrer des signes de fatigue en novembre. Pour cette raison, nous couplons systématiquement les relevés topographiques avec une campagne de <a data-interlink="1" href="/sondages-spt/">sondages SPT</a> quand le manteau d’altération est épais, ou avec un <a data-interlink="1" href="/essai-cpt/">essai CPT</a> pour cartographier les contrastes de rigidité dans les limons de couverture sans refus prématuré.</p></section>
+
+            <blockquote style="border-left:4px solid #059669;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">La craie troyenne perd jusqu’à 60 % de sa cohésion après saturation prolongée : un talus à 45° peut devenir instable sans prévenir.</blockquote>
+
+            
+
+            <section>
+                <h2>Méthodologie appliquée à Troyes</h2>
+                <div>L’erreur la plus courante sur les chantiers de lotissement des coteaux troyens consiste à traiter l’analyse de stabilité comme une simple vérification de pente sous un angle unique. On voit des bureaux d’études qui modélisent un talus homogène avec des paramètres de pic, sans tenir compte de la dégradation progressive de la cohésion dans la craie fissurée. En réalité, la rupture est souvent régressive : elle commence par une perte de succion capillaire en surface, puis une ouverture de fissures de traction en crête. Nous réalisons des profils de vitesses sismiques par <a href="/masw/">MASW</a> pour imager le toit du rocher sain et détecter les zones décomprimées avant même de poser la première sonde. L’analyse intègre ensuite le régime hydraulique local. Car ici, entre le canal de la Haute-Seine et les résurgences de la nappe de la craie, les gradients de pression interstitielle changent radicalement d’un versant à l’autre. Nos modélisations aux éléments finis ou à l’équilibre limite reproduisent ces scénarios de nappe haute pour valider le coefficient de sécurité réglementaire.</div>
+            </section>
+
+            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/estabilidad-taludes-5.webp" alt="Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Analyse de stabilité des pentes à Troyes – Approche géotechnique pour sols crayeux et vallées</figcaption></figure>
+
+            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #059669;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#059669;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Paramètre</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Valeur typique</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Méthode d’analyse</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Équilibre limite (Bishop, Spencer) et éléments finis (SSR)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Paramètres de résistance</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">c’ et φ’ pic et résiduels (essais triaxiaux CD et cisaillement direct)</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Substrat dominant à Troyes</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Craie du Sénonien (Rc 3-10 MPa) / Alluvions sablo-limoneuses</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Sismicité (Eurocode 8)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Zone 2 (agR = 0,7 m/s²) – prise en compte inertielle et pseudo-statique</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Modélisation hydraulique</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Régime permanent et transitoire (nappe haute, pluie centennale)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Instrumentation de suivi</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Inclinomètres, piézomètres Casagrande, fissuromètres</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Normes de référence</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">NF P 94-270, EN 1997-1 (Eurocode 7), NF EN ISO 22475-1</td></tr></tbody></table></div>
+
+            
+
+            <section>
+                <h2>Facteurs critiques du terrain à Troyes</h2>
+                <p>Le développement de Troyes au XXe siècle a poussé l’urbanisation sur les coteaux de Sainte-Savine et des Chartreux, là où les pentes atteignent souvent 20 à 30 %. Ces quartiers résidentiels sont aujourd’hui confrontés à des désordres que les anciens carriers connaissaient bien : la craie gélive et diaclasée travaille au gré des cycles gel-dégel et des infiltrations. Une rupture de talus ici n’est pas spectaculaire comme un glissement de terrain argileux des Alpes. Elle est insidieuse. Elle se manifeste d’abord par un affaissement de la chaussée, puis un basculement des clôtures, enfin une fissuration des soubassements. Le risque est amplifié par le ruissellement urbain concentré en pied de talus. Notre mission consiste à modéliser la stabilité en conditions non drainées à court terme et drainées à long terme pour dimensionner un éventuel confortement. On recommande souvent un système de drainage profond associé à un reprofilage de la pente plutôt qu’un mur rigide, car la souplesse de l’ouvrage doit accompagner le fluage de la craie sans créer de points durs.</p>
+            </section>
+
+            
+    <section class="block mid-cta" style="padding:2rem 0">
+      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
+        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Besoin d'une évaluation géotechnique ?</h3>
+        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Réponse sous 24h.</p>
+        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnique.sbs" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">E-mail: contact@geotechnique.sbs</a></div>
+      </div>
+    </section>
+
+            <div class="normas">
+                <strong>Normes applicables:</strong> NF P 94-270 (2020) : Calcul géotechnique – Ouvrages de soutènement – Remblais et talus, EN 1997-1 (Eurocode 7) : Calcul géotechnique – Partie 1 : Règles générales, NF EN ISO 22475-1 (2021) : Reconnaissance et essais géotechniques – Méthodes de prélèvement et mesures piézométriques, NF P 94-500 (2013) : Missions géotechniques – Classification et spécifications
+            </div>
+
+            <section>
+                <h2>Nos services</h2>
+                <p>Notre intervention couvre l’ensemble des besoins d’un projet de talus ou de versant aménagé, depuis la reconnaissance initiale jusqu’à la réception des travaux de stabilisation. Voici les prestations principales.</p>
+                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>Diagnostic géomécanique de talus</h3><p>Reconnaissance par sondages carottés et destructifs avec pose d’inclinomètres. Essais de laboratoire avancés (triaxial CD, cisaillement résiduel) pour définir les enveloppes de rupture de la craie et des limons.</p></div><div class="servicio"><h3>Modélisation de stabilité et dimensionnement</h3><p>Calculs aux éléments finis et à l’équilibre limite intégrant la géométrie réelle, la piézométrie saisonnière et l’aléa sismique local. Dimensionnement des ouvrages de confortement : clouage, tirants, drainage.</p></div><div class="servicio"><h3>Suivi et auscultation de versants</h3><p>Plan d’instrumentation avec mesures inclinométriques périodiques, suivi des pressions interstitielles et nivellement topographique. Analyse des vitesses de déplacement et déclenchement des seuils d’alerte.</p></div></div>
+            </section>
+
+            <section>
+                <h2>Questions fréquentes</h2>
+                <details><summary>Quel est le prix d’une étude de stabilité de pente sur un terrain en pente à Troyes ?</summary><p>Pour un projet résidentiel sur un coteau de l’agglomération troyenne, le budget oscille généralement entre 1 180 € et 4 150 € HT. Ce montant couvre la campagne géotechnique, les essais de laboratoire, la modélisation et le rapport avec les préconisations de confortement. Les écarts dépendent de la longueur du talus, du nombre de sondages et de la complexité hydrogéologique.</p></details><details><summary>Pourquoi la craie de Troyes est-elle sensible aux glissements alors qu’elle semble dure ?</summary><p>La craie du Sénonien est une roche tendre à porosité élevée. Quand elle est saine, elle tient bien. Mais en surface, elle est souvent altérée, fissurée et saturée en hiver. L’eau dissout le ciment carbonaté aux joints et réduit la cohésion. C’est ce matériau dégradé qui contrôle la stabilité des pentes, pas le banc sain en profondeur.</p></details><details><summary>Quelle est la différence entre une approche à l’équilibre limite et une modélisation en éléments finis ?</summary><p>L’équilibre limite (méthode de Bishop) calcule un coefficient de sécurité le long d’une surface de rupture supposée. C’est rapide et normatif. Les éléments finis avec réduction de résistance (SSR) permettent de voir comment la déformation se développe avant la rupture, ce qui est utile quand le talus interagit avec une structure existante ou un écran de soutènement.</p></details><details><summary>Faut-il une étude de stabilité pour une simple extension de maison sur un terrain en pente à Troyes ?</summary><p>Oui, dès que la pente dépasse 10 à 15° et que les terrassements modifient le profil. Une G2 AVP est exigée par l’Eurocode 7. Nous évaluons l’impact des déblais et des surcharges sur la stabilité globale. Souvent, un simple drainage et un talutage adéquat suffisent, mais il faut le démontrer par le calcul.</p></details>
+            </section>
+
+            <section>
+                <h2>Couverture à Troyes</h2>
+                <link rel="stylesheet" href="/css/leaflet.css"/>
+                <div id="mapa-ciudad"></div>
+                <script src="/js/leaflet.js"></script>
+                <script>
+                    var map = L.map('mapa-ciudad').setView([48.2971626,4.0746257], 12);
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
+                    L.circle([48.2971626,4.0746257],{radius:3000,color:'#059669',fillColor:'#10B981',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Troyes');
+                </script>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer style="background:#0F172A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem"><div><h4 style="color:#FFF;font-size:1rem;margin:0 0 .8rem">GEOTECHNIQUE</h4><p style="margin:0;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Troyes, France</p></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">SERVICES</h4><a href="/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Services</a></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">CONTACT</h4><p style="margin:0;font-size:.9rem;line-height:1.8"><a href="mailto:contact@geotechnique.sbs" style="color:#FFF;text-decoration:none">contact@geotechnique.sbs</a></p></div></div><div style="max-width:1100px;margin:2rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)">© 2026 Geotechnique. Tous droits réservés.</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>Références:</strong> <a href="https://www.afnor.org/" rel="nofollow noopener" target="_blank">Normes AFNOR</a> · <a href="https://eurocodes.jrc.ec.europa.eu/showpage.php?id=132" rel="nofollow noopener" target="_blank">Eurocode 7</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Géotechnique</a></div><div class="updated-info" data-updated="2026-05-03" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Dernière mise à jour: 2026-05-03</div></footer>
+
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sismique à Troyes – France</title>
+<meta name="description" content="En région troyenne, la catégorie Sismique répond aux exigences de l’Eurocode 8 et du zonage réglementaire français qui classe l’Aube en aléa faible à modér">
+<link rel="canonical" href="https://troyes.geotechnique.sbs/sismique/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sismique à Troyes – France">
+<meta property="og:description" content="En région troyenne, la catégorie Sismique répond aux exigences de l’Eurocode 8 et du zonage réglementaire français qui classe l’Aube en aléa faible à modér">
+<meta property="og:url" content="https://troyes.geotechnique.sbs/sismique/">
+<meta property="og:site_name" content="Geotechnique">
+<meta property="og:image" content="https://troyes.geotechnique.sbs/img/anclajes-1.webp">
+<meta property="og:locale" content="fr_FR">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sismique à Troyes – France">
+<meta name="twitter:description" content="En région troyenne, la catégorie Sismique répond aux exigences de l’Eurocode 8 et du zonage réglementaire français qui classe l’Aube en aléa faible à modér">
+<style>
+:root {
+    --primary: #059669;
+    --accent: #10B981;
+    --dark: #0F172A;
+    --bg: #F8FAFC;
+    --text: #0F172A;
+    --font-h: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+a { color: var(--primary); text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+.sidebar .cat-sub a {
+    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+    font-size: .78rem; transition: all .15s; text-decoration: none;
+    border-left: 2px solid transparent;
+}
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+.sidebar .home {
+    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+    font-size: .85rem; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.header-contact a:hover { color: white; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+main section { margin-bottom: 1.5rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+main p { margin-bottom: 1rem; color: #334155; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+tr:nth-child(even) { background: #f8fafc; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.servicio:hover { border-color: var(--primary); }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+details[open] summary::before { content: '− '; }
+summary:hover { background: rgba(0,0,0,0.02); }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+footer a { color: rgba(255,255,255,0.85); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+    .container { padding: 1rem; }
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://troyes.geotechnique.sbs/sismique/", "url": "https://troyes.geotechnique.sbs/sismique/", "name": "Sismique à Troyes – France", "inLanguage": "fr", "description": "En région troyenne, la catégorie Sismique répond aux exigences de l’Eurocode 8 et du zonage réglementaire français qui classe l’Aube en aléa faible à modér", "isPartOf": {"@type": "WebSite", "@id": "https://troyes.geotechnique.sbs/#website", "url": "https://troyes.geotechnique.sbs"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://troyes.geotechnique.sbs/"}, {"@type": "ListItem", "position": 2, "name": "Sismique", "item": "https://troyes.geotechnique.sbs/sismique/"}]}, {"@type": "ItemList", "name": "Sismique", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://troyes.geotechnique.sbs/liquefaction/", "name": "Analyse de liquéfaction des sols"}, {"@type": "ListItem", "position": 2, "url": "https://troyes.geotechnique.sbs/isolation-sismique/", "name": "Conception d'isolation sismique à la base"}, {"@type": "ListItem", "position": 3, "url": "https://troyes.geotechnique.sbs/microzonage-sismique/", "name": "Microzonage sismique"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div>
+                <div style="display:inline-flex;flex-direction:column;gap:2px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Troyes</span><div style="height:3px;width:60%;background:#059669;border-radius:2px;"></div></div>
+                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Troyes, France</div>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:contact@geotechnique.sbs">contact@geotechnique.sbs</a>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Accueil</a></li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Sismique</li></ol></nav>
+        <h1>Sismique à Troyes</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content-area">
+        <aside class="sidebar">
+            <nav><a href="index.html" class="home">Accueil</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Exploration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Exploration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/essai-cpt/">Essai CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="labo-in-situ"><div class="cat-row"><a href="/labo-in-situ/" class="cat-name">Essais in situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Essais in situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/densite-cone-sable/">Essai de densité sur site (méthode du cône de sable)</a></div></div><div class="cat-item" data-cat="laboratoire"><div class="cat-row"><a href="/laboratoire/" class="cat-name">Laboratoire</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratoire"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/granulometrie/">Analyse granulométrique (tamisage + hydromètre)</a></div></div><div class="cat-item" data-cat="fondations"><div class="cat-row"><a href="/fondations/" class="cat-name">Fondations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Fondations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/pieux/">Conception de fondations sur pieux</a></div></div><div class="cat-item" data-cat="talus"><div class="cat-row"><a href="/talus/" class="cat-name">Pentes et murs</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Pentes et murs"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stabilite-talus/">Analyse de stabilité des pentes</a><a href="/ancrages/">Conception d'ancrages actifs/passifs</a><a href="/murs-soutenement/">Conception de murs de soutènement</a></div></div><div class="cat-item" data-cat="amelioration-sols"><div class="cat-row"><a href="/amelioration-sols/" class="cat-name">Amélioration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Amélioration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/colonnes-ballastees/">Conception de colonnes ballastées (stone columns)</a><a href="/vibrocompactage/">Conception de vibrocompactage</a></div></div><div class="cat-item" data-cat="sismique"><div class="cat-row"><a href="/sismique/" class="cat-name">Sismique</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Sismique"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/liquefaction/">Analyse de liquéfaction des sols</a><a href="/isolation-sismique/">Conception d'isolation sismique à la base</a><a href="/microzonage-sismique/">Microzonage sismique</a></div></div><div class="cat-item" data-cat="geotechnique-routiere"><div class="cat-row"><a href="/geotechnique-routiere/" class="cat-name">Géotechnique routière</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Géotechnique routière"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/chaussee-rigide/">Conception de chaussées rigides</a><a href="/chaussee-souple/">Conception de chaussées souples</a><a href="/cbr-routier/">Étude CBR pour conception routière</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations souterraines</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations souterraines"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/tunnels-sol-mou/">Analyse géotechnique pour tunnels en sols mous</a><a href="/excavations-profondes/">Conception géotechnique des excavations profondes</a><a href="/surveillance-excavations/">Surveillance géotechnique des excavations</a></div></div></nav>
+        </aside>
+        <main>
+            <section><p>En région troyenne, la catégorie Sismique répond aux exigences de l’Eurocode 8 et du zonage réglementaire français qui classe l’Aube en aléa faible à modéré. Les formations crayeuses et alluviales de la vallée de la Seine imposent une attention particulière au comportement dynamique des sols. L’<a href="liquefaction">analyse de liquéfaction des sols</a> devient incontournable dès que des niveaux sableux saturés sont identifiés en profondeur, tandis que le <a href="microzonage-sismique">microzonage sismique</a> affine la carte d’aléa à l’échelle parcellaire pour tenir compte des effets de site lithologiques et topographiques propres au bassin troyen.</p>
+<p>Ces études concernent les établissements recevant du public, les immeubles de logements collectifs, les ouvrages industriels et les infrastructures classées à risque normal ou spécial. Pour les projets où la performance parasismique doit dépasser le dimensionnement conventionnel, la <a href="isolation-sismique">conception d’isolation sismique à la base</a> offre une réduction drastique des sollicitations transmises à la superstructure, solution pertinente sur les sols compressibles du territoire.</p></section>
+
+            <blockquote style="border-left:4px solid #059669;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Un ancrage dans la craie de Troyes bien dimensionné peut reprendre 400 kN par tirant, mais une injection mal maîtrisée divise cette capacité par trois.</blockquote>
+
+            
+
+            <section>
+                <h2>Méthodologie appliquée à Troyes</h2>
+                <div>Entre le quartier des Marots, posé sur les alluvions grossières de la plaine inondable, et le secteur de Croncels, adossé aux premières pentes crayeuses du plateau de Langres, la différence de comportement est radicale. Aux Marots, un ancrage passif dans des graves sableuses mobilise difficilement le frottement latéral si le forage n'est pas parfaitement nettoyé — nous utilisons un tubage à front perdu pour garantir l'injection du coulis sous pression contrôlée. À Croncels, la craie franche permet des scellements plus courts mais exige une attention particulière au fluage : nous appliquons la méthode de Bustamante pour extrapoler la capacité à long terme à partir des essais de mise en tension. Dans les deux cas, la vérification se fait sur chantier avec des vérins calibrés et des cellules de mesure continues. Pour les ouvrages qui sollicitent fortement le massif, comme les murs de quai le long du canal de la Haute-Seine, nous couplons fréquemment la <a href="/murs-soutenement/">conception des murs de soutènement</a> avec un système d'ancrages précontraints dimensionnés selon l'Eurocode 7 et les recommandations du CFMS pour les sols crayeux.</div>
+            </section>
+
+            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/anclajes-1.webp" alt="Conception d'ancrages actifs et passifs à Troyes — solutions de retenue pour sols alluviaux" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Conception d'ancrages actifs et passifs à Troyes — solutions de retenue pour sols alluviaux</figcaption></figure>
+
+            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #059669;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#059669;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Paramètre</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Valeur typique</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Diamètre de forage</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">105 à 200 mm selon armature</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Type de coulis</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Ciment CEM I 42,5 + bentonite (ratio E/C 0,4)</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Pression d'injection</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0,5 à 2,0 MPa (selon perméabilité craie)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Essai de contrôle</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Mise en tension par paliers selon NF EN 1537</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Longueur de scellement</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">4 à 12 m (craie) / 8 à 18 m (alluvions)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Protection anticorrosion</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Double barrière (gaine + coulis) classe III</td></tr></tbody></table></div>
+
+            
+
+            <section>
+                <h2>Facteurs critiques du terrain à Troyes</h2>
+                <p>La carte géologique de Troyes au 1/50 000 montre une particularité qui échappe souvent aux études préliminaires : des poches de dissolution karstique dans la craie, héritées de la circulation d'eau souterraine qui a dissous le carbonate de calcium sur des millénaires. Quand un ancrage traverse une de ces cavités sans qu'on l'ait détectée, le coulis d'injection peut fuir dans le réseau de fractures — on perd la pression, on perd le scellement, et le tirant devient inopérant. Nous réalisons systématiquement un sondage destructif avec enregistrement des paramètres de foration avant de positionner les ancrages définitifs, et chaque forage de production est instrumenté avec un débitmètre sur la pompe à coulis pour détecter instantanément une surconsommation. La profondeur du toit de la craie varie de 2 à 8 mètres selon les quartiers, et dans la zone du Bouchon de Champagne, le recouvrement alluvial peut masquer des blocs erratiques qui dévient le forage — un risque mécanique qui se gère avec un tubage renforcé et une surveillance de la verticalité par inclinomètre de trou.</p>
+            </section>
+
+            
+    <section class="block mid-cta" style="padding:2rem 0">
+      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
+        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Besoin d'une évaluation géotechnique ?</h3>
+        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Réponse sous 24h.</p>
+        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnique.sbs" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">E-mail: contact@geotechnique.sbs</a></div>
+      </div>
+    </section>
+
+            <div class="normas">
+                <strong>Normes applicables:</strong> NF EN 1537:2013 — Exécution des travaux géotechniques spéciaux : tirants d'ancrage, NF EN 1997-1 (Eurocode 7) — Calcul géotechnique avec annexe nationale française, Recommandations CFMS pour le dimensionnement des ancrages dans les sols fins et la craie, NF EN ISO 22475-1 — Reconnaissance et essais géotechniques
+            </div>
+
+            <section>
+                <h2>Nos services</h2>
+                <p>Notre intervention sur les projets d'ancrage à Troyes couvre l'ensemble du cycle, depuis la reconnaissance géotechnique spécifique jusqu'à la réception des tirants. Nous travaillons en coordination directe avec les entreprises de forage locales et les bureaux de contrôle agréés.</p>
+                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>Dimensionnement géotechnique</h3><p>Calcul de la capacité d'ancrage par mètre linéaire de scellement selon les corrélations pressionnétriques (Ménard) et les essais de frottement latéral en forage. Optimisation du nombre de tirants et de leur inclinaison pour chaque configuration de soutènement.</p></div><div class="servicio"><h3>Spécifications techniques et plans</h3><p>Rédaction des cahiers des charges pour l'entreprise de forage, incluant les fiches de tirant avec longueur libre, longueur de scellement, type de coulis, pression d'injection et programme des essais de contrôle.</p></div><div class="servicio"><h3>Supervision de mise en œuvre</h3><p>Suivi de chantier avec contrôle des paramètres de foration (vitesse d'avancement, couple, perte de fluide), de l'injection (volume réel vs théorique, pression stabilisée) et des essais de mise en tension.</p></div><div class="servicio"><h3>Contrôle et réception</h3><p>Essais de traction selon la norme NF EN 1537, par paliers de charge maintenus, avec enregistrement du fluage. Rapport de réception avec courbes charge-déplacement et validation de la capacité ultime.</p></div></div>
+            </section>
+
+            
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Services disponibles</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Analyse de liquéfaction des sols</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../isolation-sismique/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Conception d'isolation sismique à la base</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../microzonage-sismique/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Microzonage sismique</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+    </div>
+</div>
+
+<footer style="background:#0F172A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem"><div><h4 style="color:#FFF;font-size:1rem;margin:0 0 .8rem">GEOTECHNIQUE</h4><p style="margin:0;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Troyes, France</p></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">SERVICES</h4><a href="/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Services</a></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">CONTACT</h4><p style="margin:0;font-size:.9rem;line-height:1.8"><a href="mailto:contact@geotechnique.sbs" style="color:#FFF;text-decoration:none">contact@geotechnique.sbs</a></p></div></div><div style="max-width:1100px;margin:2rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)">© 2026 Geotechnique. Tous droits réservés.</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>Références:</strong> <a href="https://www.afnor.org/" rel="nofollow noopener" target="_blank">Normes AFNOR</a> · <a href="https://eurocodes.jrc.ec.europa.eu/showpage.php?id=132" rel="nofollow noopener" target="_blank">Eurocode 7</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Géotechnique</a></div><div class="updated-info" data-updated="2026-05-03" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Dernière mise à jour: 2026-05-03</div></footer>
+
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
+</html>

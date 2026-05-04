@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Géotechnique à Troyes</title>
+<meta name="description" content="Étude de mécanique des sols à Troyes pour vos fondations. Reconnaissance du sous-sol crayeux et alluvionnaire selon Eurocode 7. Rapport technique par laboratoire certifié.">
+<link rel="canonical" href="https://troyes.geotechnique.sbs/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Géotechnique à Troyes">
+<meta property="og:description" content="Étude de mécanique des sols à Troyes pour vos fondations. Reconnaissance du sous-sol crayeux et alluvionnaire selon Eurocode 7. Rapport technique par laboratoire certifié.">
+<meta property="og:url" content="https://troyes.geotechnique.sbs/">
+<meta property="og:site_name" content="Geotechnique">
+<meta property="og:image" content="https://troyes.geotechnique.sbs/img/estudio-mecanica-suelos-1.webp">
+<meta property="og:locale" content="fr_FR">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Géotechnique à Troyes">
+<meta name="twitter:description" content="Étude de mécanique des sols à Troyes pour vos fondations. Reconnaissance du sous-sol crayeux et alluvionnaire selon Eurocode 7. Rapport technique par laboratoire certifié.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "/"}, {"@type": "ListItem", "position": 2, "name": "Géotechnique à Troyes"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Géotechnique à Troyes", "description": "Étude de mécanique des sols à Troyes pour vos fondations. Reconnaissance du sous-sol crayeux et alluvionnaire selon Eurocode 7. Rapport technique par laboratoire certifié.", "areaServed": {"@type": "City", "name": "Troyes"}, "provider": {"@type": "LocalBusiness", "name": "Geotechnique", "email": "contact@geotechnique.sbs", "telephone": "", "address": {"@type": "PostalAddress", "addressLocality": "Troyes", "addressCountry": "FR"}}, "url": "https://troyes.geotechnique.sbs/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quel est le prix d'une étude de mécanique des sols à Troyes ?", "acceptedAnswer": {"@type": "Answer", "text": "Le coût varie selon la mission (G1, G2, G5) et le nombre de sondages. Pour une maison individuelle en zone classique, comptez entre 3 020 et 4 940 euros. Un projet collectif ou industriel nécessite un devis sur mesure après consultation du plan de masse."}}, {"@type": "Question", "name": "Combien de sondages faut-il pour une parcelle de 500 m² ?", "acceptedAnswer": {"@type": "Answer", "text": "La norme NF P 94-500 recommande un minimum de deux à trois points de reconnaissance pour cette surface. Nous ajustons le maillage en fonction de l'homogénéité présumée du sous-sol troyen, avec un point tous les 15 à 20 mètres en cas de lentilles alluvionnaires suspectées."}}, {"@type": "Question", "name": "L'étude de mécanique des sols est-elle obligatoire pour un permis de construire à Troyes ?", "acceptedAnswer": {"@type": "Answer", "text": "Depuis la loi ELAN, le vendeur d'un terrain à bâtir doit fournir une étude géotechnique préalable (G1) dans les zones exposées au retrait-gonflement des argiles. Même hors obligation légale, les assureurs exigent quasi systématiquement une mission G2 pour délivrer la garantie décennale."}}, {"@type": "Question", "name": "Quel délai pour obtenir le rapport après votre intervention ?", "acceptedAnswer": {"@type": "Answer", "text": "Les essais en laboratoire demandent du temps, surtout pour les analyses triaxiales consolidées non drainées. Nous livrons le rapport complet sous 10 à 15 jours ouvrés après la fin des investigations de terrain."}}]}</script>
+<style>
+:root {
+    --primary: #059669;
+    --accent: #10B981;
+    --dark: #0F172A;
+    --bg: #F8FAFC;
+    --text: #0F172A;
+    --font-h: 'Space Grotesk', 'Segoe UI', sans-serif;
+    --font-b: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+a { color: var(--primary); text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+.sidebar .cat-sub a {
+    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+    font-size: .78rem; transition: all .15s; text-decoration: none;
+    border-left: 2px solid transparent;
+}
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+.sidebar .home {
+    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+    font-size: .85rem; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.header-contact a:hover { color: white; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+main section { margin-bottom: 1.5rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+main p { margin-bottom: 1rem; color: #334155; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+tr:nth-child(even) { background: #f8fafc; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.servicio:hover { border-color: var(--primary); }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+details[open] summary::before { content: '− '; }
+summary:hover { background: rgba(0,0,0,0.02); }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+footer a { color: rgba(255,255,255,0.85); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+    .container { padding: 1rem; }
+}
+</style>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div>
+                <div style="display:inline-flex;flex-direction:column;gap:2px;"><span style="font-family:'Space Grotesk',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Troyes</span><div style="height:3px;width:60%;background:#059669;border-radius:2px;"></div></div>
+                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Troyes, France</div>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:contact@geotechnique.sbs">contact@geotechnique.sbs</a>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Accueil</a></li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Géotechnique à Troyes</li></ol></nav>
+        <h1>Géotechnique à Troyes</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content-area">
+        <aside class="sidebar">
+            <nav><a href="index.html" class="home">Accueil</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Exploration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Exploration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/essai-cpt/">Essai CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="labo-in-situ"><div class="cat-row"><a href="/labo-in-situ/" class="cat-name">Essais in situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Essais in situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/densite-cone-sable/">Essai de densité sur site (méthode du cône de sable)</a></div></div><div class="cat-item" data-cat="laboratoire"><div class="cat-row"><a href="/laboratoire/" class="cat-name">Laboratoire</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratoire"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/granulometrie/">Analyse granulométrique (tamisage + hydromètre)</a></div></div><div class="cat-item" data-cat="fondations"><div class="cat-row"><a href="/fondations/" class="cat-name">Fondations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Fondations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/pieux/">Conception de fondations sur pieux</a></div></div><div class="cat-item" data-cat="talus"><div class="cat-row"><a href="/talus/" class="cat-name">Pentes et murs</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Pentes et murs"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stabilite-talus/">Analyse de stabilité des pentes</a><a href="/ancrages/">Conception d'ancrages actifs/passifs</a><a href="/murs-soutenement/">Conception de murs de soutènement</a></div></div><div class="cat-item" data-cat="amelioration-sols"><div class="cat-row"><a href="/amelioration-sols/" class="cat-name">Amélioration</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Amélioration"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/colonnes-ballastees/">Conception de colonnes ballastées (stone columns)</a><a href="/vibrocompactage/">Conception de vibrocompactage</a></div></div><div class="cat-item" data-cat="sismique"><div class="cat-row"><a href="/sismique/" class="cat-name">Sismique</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Sismique"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/liquefaction/">Analyse de liquéfaction des sols</a><a href="/isolation-sismique/">Conception d'isolation sismique à la base</a><a href="/microzonage-sismique/">Microzonage sismique</a></div></div><div class="cat-item" data-cat="geotechnique-routiere"><div class="cat-row"><a href="/geotechnique-routiere/" class="cat-name">Géotechnique routière</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Géotechnique routière"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/chaussee-rigide/">Conception de chaussées rigides</a><a href="/chaussee-souple/">Conception de chaussées souples</a><a href="/cbr-routier/">Étude CBR pour conception routière</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations souterraines</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations souterraines"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/tunnels-sol-mou/">Analyse géotechnique pour tunnels en sols mous</a><a href="/excavations-profondes/">Conception géotechnique des excavations profondes</a><a href="/surveillance-excavations/">Surveillance géotechnique des excavations</a></div></div></nav>
+        </aside>
+        <main>
+            <section><p>L'Eurocode 7 (EN 1997-1:2004) est catégorique pour toute la Champagne humide. À Troyes, la nature très particulière du sous-sol — craie altérée du Sénonien surmontée d'alluvions de la Seine — exige une campagne de reconnaissance qui ne tolère aucune approximation. Nous le savons, nous avons foré dans le quartier des Chartreux comme en zone inondable du Vouldy. L'étude de mécanique des sols démarre toujours par une analyse documentaire, mais c'est le terrain qui parle. La craie troyenne, quand elle est fracturée, peut présenter des vides karstiques. Les limons de débordement, eux, changent de consistance avec la nappe phréatique qui fluctue au rythme des crues. Notre équipe applique la norme NF P 94-500 pour définir les missions géotechniques, et nous ne signons un rapport qu'après avoir croisé les essais in situ avec les analyses en laboratoire. Pour les projets en bord de Seine, nous couplons systématiquement l'étude avec des <a data-interlink="1" href="/sondages-spt/">sondages SPT</a> afin de quantifier la compacité des sables et graviers sous la couche limoneuse.</p></section>
+
+            <blockquote style="border-left:4px solid #059669;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">La craie de Troyes n'est pas un rocher inerte : elle respire, elle se dissout, elle se déforme sous charge si on ne la caractérise pas correctement.</blockquote>
+
+            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/estudio-mecanica-suelos-1.webp" alt="Géotechnique à Troyes" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Géotechnique à Troyes</figcaption></figure>
+
+            <section>
+                <h2>Méthodologie appliquée à Troyes</h2>
+                <div>Sur un chantier de logements collectifs rue de la Paix, le maître d'ouvrage pensait fonder sur semelles filantes à 80 cm. Le terrain a raconté autre chose. Sous 60 cm de remblais hétérogènes — un mélange de brique pilée et de limon — on a trouvé une couche de craie molle remaniée sur 2,50 mètres. La portance était insuffisante. L'étude de mécanique des sols a permis de redimensionner le projet avec des fondations semi-profondes, en évitant un sinistre à 150 000 euros de reprise. Ce genre de scénario, nous le rencontrons régulièrement dans le périmètre sauvegardé de Troyes, où les reconstructions successives depuis le Moyen Âge ont superposé des matériaux impossibles à modéliser sans fouilles. Nous réalisons des <a href="/puits-inspection/">puits d'inspection</a> pour lever les doutes sur les anciennes caves et les substructures. En complément, quand la teneur en eau de la craie dépasse 30 %, un <a href="/triaxial/">essai triaxial</a> devient indispensable pour évaluer le comportement mécanique sous la future charge, en conditions drainées ou non.</div>
+            </section>
+
+            
+
+            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #059669;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#059669;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Paramètre</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Valeur typique</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Profondeur de reconnaissance</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Jusqu'à 15 m en forage carotté</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Type de sol dominant</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Craie sénonienne, limons alluviaux</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Niveau de nappe</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Variable, entre 2 et 5 m selon saison</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Pression limite nette (Ménard)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0,4 à 2,5 MPa selon faciès</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Classification GTR</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">A1 (craie), A2 (limons)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Délai de rendu du rapport</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">10 à 15 jours ouvrés</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Laboratoire</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Accrédité COFRAC Essais</td></tr></tbody></table></div>
+
+            
+
+            <section>
+                <h2>Facteurs critiques du terrain à Troyes</h2>
+                <p>Avec une altitude moyenne de 113 mètres NGF et une plaine alluviale drainée par la Seine, Troyes cumule deux aléas majeurs pour les constructions : l'inondabilité et la dissolution du gypse sous-jacent. L'étude de mécanique des sols ne peut pas faire l'impasse sur ces réalités physiques. Les effondrements de cavités naturelles sont documentés dans le secteur de Saint-Julien-les-Villas et de Rosières-près-Troyes, où des fonts se sont ouverts brutalement en 2018 et 2021. Un constructeur qui néglige le diagnostic géotechnique s'expose à des désordres structurels irréversibles, voire à un refus d'assurance dommage-ouvrage. Nous croisons toujours nos observations avec la cartographie des risques du BRGM. Quand le plan de prévention des risques naturels classe une parcelle en zone bleue, nous adaptons le programme d'investigation : les essais de <a data-interlink="1" href="/permeabilite-in-situ/">permeabilite-in-situ</a> deviennent alors aussi importants que la portance pour concevoir un drainage qui tienne dans le temps.</p>
+            </section>
+
+            
+    <section class="block mid-cta" style="padding:2rem 0">
+      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
+        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Besoin d'une évaluation géotechnique ?</h3>
+        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Réponse sous 24h.</p>
+        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnique.sbs" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">E-mail: contact@geotechnique.sbs</a></div>
+      </div>
+    </section>
+
+            <div class="normas">
+                <strong>Normes applicables:</strong> NF P 94-500 (missions géotechniques), Eurocode 7 (EN 1997-1:2004), NF EN ISO 17892 (essais de laboratoire), NF EN ISO 22475-1 (sondages et prélèvements)
+            </div>
+
+            <section>
+                <h2>Nos services</h2>
+                <p>Notre offre à Troyes couvre l'ensemble de la chaîne géotechnique, de la pré-étude à la supervision d'exécution. Voici les prestations les plus demandées par les maîtres d'œuvre et les constructeurs locaux :</p>
+                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#059669;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#059669}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#059669;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>Mission G2 AVP/PRO</h3><p>Phase avant-projet et projet. Dimensionnement des fondations à partir de l'étude de mécanique des sols, avec calcul de portance et estimation des tassements sous charge.</p></div><div class="servicio"><h3>Reconnaissance des vides karstiques</h3><p>Détection des cavités dans la craie par méthodes géophysiques et forage destructif, afin de sécuriser l'implantation des pieux ou radiers.</p></div><div class="servicio"><h3>Essais en laboratoire COFRAC</h3><p>Analyse granulométrique, limites d'Atterberg, cisaillement triaxial sur échantillons intacts de craie et d'alluvions prélevés sur site.</p></div><div class="servicio"><h3>Suivi géotechnique d'exécution (G4)</h3><p>Présence sur chantier pour vérifier la conformité du sol en fond de fouille et valider les adaptations de dernière minute face aux hétérogénéités locales.</p></div></div>
+            </section>
+
+            <section>
+                <h2>Questions fréquentes</h2>
+                <details><summary>Quel est le prix d'une étude de mécanique des sols à Troyes ?</summary><p>Le coût varie selon la mission (G1, G2, G5) et le nombre de sondages. Pour une maison individuelle en zone classique, comptez entre 3 020 et 4 940 euros. Un projet collectif ou industriel nécessite un devis sur mesure après consultation du plan de masse.</p></details><details><summary>Combien de sondages faut-il pour une parcelle de 500 m² ?</summary><p>La norme NF P 94-500 recommande un minimum de deux à trois points de reconnaissance pour cette surface. Nous ajustons le maillage en fonction de l'homogénéité présumée du sous-sol troyen, avec un point tous les 15 à 20 mètres en cas de lentilles alluvionnaires suspectées.</p></details><details><summary>L'étude de mécanique des sols est-elle obligatoire pour un permis de construire à Troyes ?</summary><p>Depuis la loi ELAN, le vendeur d'un terrain à bâtir doit fournir une étude géotechnique préalable (G1) dans les zones exposées au retrait-gonflement des argiles. Même hors obligation légale, les assureurs exigent quasi systématiquement une mission G2 pour délivrer la garantie décennale.</p></details><details><summary>Quel délai pour obtenir le rapport après votre intervention ?</summary><p>Les essais en laboratoire demandent du temps, surtout pour les analyses triaxiales consolidées non drainées. Nous livrons le rapport complet sous 10 à 15 jours ouvrés après la fin des investigations de terrain.</p></details>
+            </section>
+
+            <section>
+                <h2>Couverture à Troyes</h2>
+                <link rel="stylesheet" href="/css/leaflet.css"/>
+                <div id="mapa-ciudad"></div>
+                <script src="/js/leaflet.js"></script>
+                <script>
+                    var map = L.map('mapa-ciudad').setView([48.2971626,4.0746257], 12);
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
+                    L.circle([48.2971626,4.0746257],{radius:3000,color:'#059669',fillColor:'#10B981',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Troyes');
+                </script>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer style="background:#0F172A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem"><div><h4 style="color:#FFF;font-size:1rem;margin:0 0 .8rem">GEOTECHNIQUE</h4><p style="margin:0;font-size:.9rem;color:rgba(255,255,255,.7);line-height:1.6">Troyes, France</p></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">SERVICES</h4><a href="/" style="color:rgba(255,255,255,.75);text-decoration:none;display:block;padding:.25rem 0">Services</a></div><div><h4 style="color:#FFF;font-size:.92rem;margin:0 0 .8rem">CONTACT</h4><p style="margin:0;font-size:.9rem;line-height:1.8"><a href="mailto:contact@geotechnique.sbs" style="color:#FFF;text-decoration:none">contact@geotechnique.sbs</a></p></div></div><div style="max-width:1100px;margin:2rem auto 0;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:.8rem;color:rgba(255,255,255,.5)">© 2026 Geotechnique. Tous droits réservés.</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>Références:</strong> <a href="https://www.afnor.org/" rel="nofollow noopener" target="_blank">Normes AFNOR</a> · <a href="https://eurocodes.jrc.ec.europa.eu/showpage.php?id=132" rel="nofollow noopener" target="_blank">Eurocode 7</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Géotechnique</a></div><div class="updated-info" data-updated="2026-05-03" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Dernière mise à jour: 2026-05-03</div></footer>
+
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
+</html>
