@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "fr",
+  "orientation": "portrait",
+  "scope": "/",
+  "description": "Services géotechniques professionnels à Troyes, France. Études de sol, essais et conseil technique.",
+  "id": "/troyes-9421"
 }
